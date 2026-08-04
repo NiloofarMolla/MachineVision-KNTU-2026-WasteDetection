@@ -25,7 +25,7 @@ Watch the full presentation and demonstration of the project here:
 
 - [**simulation Video**](https://drive.google.com/file/d/17S6Fzu7EaFaotwqc4qjK7tEuzoJw3aAO/view?usp=sharing)
 
-📄 **[Project Report & Documentation (Google Drive)](Link-Here)**
+📄 **[Project Report & Documentation (Google Drive)](https://drive.google.com/file/d/1j6WbLT3a0n-hSttpIHVZlskg5xV8qjZQ/view?usp=sharing)**
 
 ---
 
