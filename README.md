@@ -1,0 +1,1 @@
+# MachineVision-KNTU-2026-WasteDetection
