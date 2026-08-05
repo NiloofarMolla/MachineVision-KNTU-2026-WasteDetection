@@ -1,0 +1,216 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/universal_robots/protos/UR5e.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.20133337192203313 0.08821114221958155 -0.9755427554642704 2.333741914686724
+  position 3.2680655358037147 2.914234376116797 1.6061530515919034
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.21 0 -0.01
+  floorSize 4 4
+}
+Solid {
+  translation -1.17 0 0.13
+  rotation 6.78097e-09 -1 -1.1745e-08 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/cigarette.png"
+          ]
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.15
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Cylinder {
+    height 0.1
+    radius 0.15
+  }
+  physics Physics {
+    mass 1
+  }
+}
+Solid {
+  translation -1 0.8 0.25
+  rotation 0 0 1 1.0472
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/plastic bag.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.5 0.5 0.5
+  }
+  physics Physics {
+    mass 5
+  }
+}
+DEF cap Solid {
+  translation -0.3593 -0.93855 0.1
+  rotation 6.04607e-07 4.78114e-07 1 2.35602
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/bottle cap.png"
+          ]
+        }
+      }
+      geometry Cylinder {
+        height 0.3
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Cylinder {
+    height 0.3
+    radius 0.2
+  }
+  physics Physics {
+    mass 10
+  }
+}
+DEF paper_cup Solid {
+  translation 0.943998 -1.06341 0.2
+  rotation -5.6541e-18 5.37066e-18 1 -2.8797953071795863
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/paper cup.png"
+          ]
+        }
+      }
+      geometry Cylinder {
+        height 0.5
+        radius 0.25
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Cylinder {
+    height 0.5
+    radius 0.25
+  }
+  physics Physics {
+    mass 20
+  }
+}
+DEF bottle Solid {
+  translation 1.64908 0.296267 0.24806
+  rotation 0.707105781185522 -1.3326295876166546e-06 -0.7071077811849031 3.14159
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/—Pngtree—plastic bottle_6508721.png"
+          ]
+        }
+      }
+      geometry Cylinder {
+        height 0.4
+        radius 0.4
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Cylinder {
+    height 0.4
+    radius 0.4
+  }
+  physics Physics {
+    mass 20
+  }
+}
+DEF coca Solid {
+  translation 0.502576 1.24196 0.203215
+  rotation 0.23798208707491408 -0.969669354790887 0.05573032039108456 -1.6577153071795863
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/soda can.png"
+          ]
+        }
+      }
+      geometry Cylinder {
+        height 0.5
+        radius 0.25
+      }
+    }
+  ]
+  boundingObject Cylinder {
+    height 0.5
+    radius 0.25
+  }
+  physics Physics {
+    mass 1
+  }
+}
+UR5e {
+  controller "ur5e_vacuum_yolo_controller"
+  toolSlot [
+    Camera {
+      translation 0 0.05 0
+      rotation -0.7147304207184375 -0.6948767979207031 0.0794144911909375 2.7831853071795862
+      name "waste_camera"
+      fieldOfView 1.5
+      width 640
+      height 480
+    }
+    VacuumGripper {
+      translation 0 0.025 0
+      rotation 1 0 0 1.57
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+            }
+          }
+          geometry Cylinder {
+            height 0.05
+            radius 0.05
+          }
+        }
+      ]
+      boundingObject Cylinder {
+        height 0.05
+        radius 0.05
+      }
+      physics Physics {
+        mass 10
+      }
+    }
+  ]
+}
