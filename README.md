@@ -33,7 +33,7 @@ Watch the full presentation and demonstration of the project here:
 | Name | Student ID | GitHub Profile | Role / Contribution |
 | :--- | :--- | :--- | :--- |
 | [Niloofar Molla] | `40122903` | [@username](https://github.com/NiloofarMolla) | model training & Simulation & Path Planning |
-| [Mohadese Alirezaee] | `40121123` | [@username](https://github.com/username) | model training & Report writing & documentation |
+| [Mohadese Alirezaee] | `40121123` | [@username](https://github.com/m24ath) | model training & Report writing & documentation |
 | [Arshia Ebrahimi] | `40002243` | [@username](https://github.com/earshia82) | model training & Dataset preprocessing |
 
 ---
