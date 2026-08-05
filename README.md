@@ -115,7 +115,7 @@ The **Pick & Place** stage (grasping and sorting waste with the UR5e robot and g
 ```bash
 python code/train_yolov8_highlevel.py --config configs/highlevel.yaml
 ```
-*(Add screenshots or GIFs of your project running here to make it visually appealing!)*
+*media/train_images/train_images/train_batch0.jpg*
 
 ---
 
